@@ -1,7 +1,4 @@
 #!/usr/bin/env ruby
 
-numbers = ARGV.map { |arg| arg.to_i }
-sorted = numbers.sort
-sorted.each do |num|
-  puts num
-end
+numbers = ARGV.select { |arg| arg.match?(/^[-]?\d+$/) }.map(&:to_i)
+numbers.sort.each { |n| puts n }
