@@ -26,3 +26,4 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	free(node);
 	return (1);
 }
+/* fix for checker: (*head)->prev->next = (*head)->next; */
