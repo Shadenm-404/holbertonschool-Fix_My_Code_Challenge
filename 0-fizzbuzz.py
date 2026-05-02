@@ -1,14 +1,14 @@
 #!/usr/bin/python3
 import sys
 
-result = []
+output = []
 for i in range(1, int(sys.argv[1]) + 1):
-    if i % 3 == 0 and i % 5 == 0:
-        result.append("FizzBuzz")
+    if i % 15 == 0:
+        output.append("FizzBuzz")
     elif i % 3 == 0:
-        result.append("Fizz")
+        output.append("Fizz")
     elif i % 5 == 0:
-        result.append("Buzz")
+        output.append("Buzz")
     else:
-        result.append(str(i))
-sys.stdout.write(" ".join(result))
+        output.append(str(i))
+sys.stdout.write(" ".join(output))
