@@ -1,0 +1,25 @@
+# 0. Simple Web Stack
+
+Domain: foobar.com
+www record -> 8.8.8.8
+
+Components:
+- 1 Server
+- Web Server (Nginx)
+- Application Server
+- Application Code Base
+- Database (MySQL)
+
+Explanation:
+- Server: A machine that hosts the website
+- Domain Name: Maps a name to an IP address
+- DNS Record: www is an A record
+- Web Server: Handles HTTP requests and serves static content
+- Application Server: Runs backend logic
+- Database: Stores application data
+- Communication: HTTP/HTTPS over TCP/IP
+
+Issues:
+- SPOF (Single Point of Failure)
+- Downtime during maintenance
+- Cannot scale with high traffic
