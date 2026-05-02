@@ -11,4 +11,4 @@ for i in range(1, int(sys.argv[1]) + 1):
         output.append("Buzz")
     else:
         output.append(str(i))
-sys.stdout.write(" ".join(output))
+print(" ".join(output))
