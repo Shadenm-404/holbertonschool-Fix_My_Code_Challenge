@@ -1,18 +1,14 @@
 #!/usr/bin/python3
 import sys
 
-n = int(sys.argv[1])
-for i in range(1, n + 1):
+result = []
+for i in range(1, int(sys.argv[1]) + 1):
     if i % 3 == 0 and i % 5 == 0:
-        word = "FizzBuzz"
+        result.append("FizzBuzz")
     elif i % 3 == 0:
-        word = "Fizz"
+        result.append("Fizz")
     elif i % 5 == 0:
-        word = "Buzz"
+        result.append("Buzz")
     else:
-        word = str(i)
-    if i == n:
-        print(word, end="")
-    else:
-        print(word, end=" ")
-print()
+        result.append(str(i))
+sys.stdout.write(" ".join(result))
